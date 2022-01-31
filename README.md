@@ -1,12 +1,9 @@
 # Free Verse Poetry Generator
 
-You can use the [editor on GitHub](https://github.com/awguo2019/cs152sp22/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ## Project Description
 
-I'd like to train neural networks / utilize OpenAI's GPT-3 model to generate poetry, or more specifically [free verse poetry] (https://en.wikipedia.org/wiki/Free_verse). Given an optional prompt, word count, and temperature value (how 'creative' or unique the output will be), the model will return a sample free verse poem according to the specifications outlined (and hopefully related to the prompt given). A dataset of free verse poetry will need to be created, probably through scraping internet forums (reddit api?) and webpages, alongside famous free verse poem books.
+I'd like to train neural networks / utilize OpenAI's GPT-3 model to generate poetry, or more specifically [free verse poetry](https://en.wikipedia.org/wiki/Free_verse). Given an optional prompt, word count, and temperature value (how 'creative' or unique the output will be), the model will return a sample free verse poem according to the specifications outlined (and hopefully related to the prompt given). A dataset of free verse poetry will need to be created, probably through scraping internet forums (reddit api?) and webpages, alongside famous free verse poem books.
 
 The trained model will be deployed as a web application where you can generate poems according to the specifications listed above, and if so desired, can share generated poems on social media platforms (additional feature if time permits). Additional extensions can include attempting to branch out to alternate forms of poetry (haiku, sonnet, etc), which would all require modifications to the dataset.
 
