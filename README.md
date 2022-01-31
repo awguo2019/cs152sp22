@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## CS 152 Project Proposal
 
 
 You can use the [editor on GitHub](https://github.com/awguo2019/cs152sp22/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
