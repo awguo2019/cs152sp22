@@ -1,5 +1,15 @@
-# Free Verse Poetry Generator
+# Logophile: A Free Verse Poetry Generator
 
+## Project Outline
+Bridging the gap between computation and creativity, building a system that can produce creative works of 'art', has been the source of much discussion and interest throughout time. How can one artificially produce inspiration, create art, through a systematic process? What separates machine-made and human-made art, and how can one determine this difference? 
+
+Poetry is already difficult enough for humans to create. What makes a poem 'good' goes so much beyond word choice, sound, rhythm; so much of it lies within the heart, the soul of the message being expressed. Needless to say, it seems quite difficult for an artificial source, a computer without a soul, to produce good poetry. 
+
+But recently, there have been many exciting developments within the realm of computation, primarily with neural nets and natural language processing. Computers are now able to solve problems we could only dream of a few years before, from image classification to sentiment analysis. Programs were able to navigate the grey, fuzzy area of problems to be solved--and this grey area includes text generation. GPT is among these incredibly promising developments, a model that excels at generating text given a prompt using natural language processing. By fine-tuning GPT-3, we hope to develop a neural network, a computer program, that is capable of producing free-verse poetry nearly indistinguishable from that produced by a human. 
+
+We hope to a) be able to create a corpus of free-verse poetry to fine-tune GPT-3 with, b) build a neural network model that given optional input, can produce free-verse poetry relating to aforementioned optional input, and c) evaulate this poetry by either 1) having humans classify AI-generated poetry from man-made poetry, or 2) build a neural network classifier distinguishing AI and human poetry. Lastly, we hope to deploy our model(s) into a full-stack web application so that other users can play around with what we built. 
+
+Some ethical questions: Should we be doing this? I don't see why not--this project is all in good fun, and its main impact (to us) is just to see if we can create art from a computational source. What might be the accuracy of a simple non-ML alternative? Probably very poor--I can't imagine a non-ML alternative could see much variation in sentence structure, syntax, etc. Is our data valid for its intended use? We hope to grab all our data from the public domain of the internet as 'inspiration' for our model, so we believe yes. What bias could be in our data, and how can we minimize said bias? I forsee bias being prevalent in the voices we take in our dataset--it can be likely for us to sample mostly caucasian male poets, thus creating a bias in the writing form and topics of our AI. In order to combat this, we need to sample poets of different cultures, gender idenitities, and ethnicities in order to build a full picture of the breadth free-verse poetry covers. Lastly, we need to be careful of content warnings/profanity--some possible solutions include 1) filters (or sentiment analysis models) detecting possible hurtful speech, or 2) including content warnings if necessary. 
 
 ## Project Description
 
@@ -14,6 +24,10 @@ The longer-term goal of the project is to see if a computer, or neural net, is c
 2. Explore methods for making the writing more "human", and for making it more "creative".
 3. Train a NN that is capable of generating a free verse poem (related to an optional prompt the user enters in). 
 4. Deploy the NN as a web-app that the user can freely interact with.
+
+
+
+
 
 
 <!---
