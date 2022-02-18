@@ -26,6 +26,15 @@ The longer-term goal of the project is to see if a computer, or neural net, is c
 4. Deploy the NN as a web-app that the user can freely interact with.
 
 
+## Related Works
+1: Yan, R. (n.d.). I, poet: Automatic Poetry Composition through Recurrent Neural Networks with Iterative Polishing Schema. Retrieved February 17, 2022, from http://cslt.riit.tsinghua.edu.cn/mediawiki/images/c/c7/Automatic_poetry_composition_through_recurrent_neural_networks_with_iterative_polishing_schema.pdf 
+Researchers propose an original way to compose poetry based on recurrent neural network structures. The paper presents a new polishing schema for generating poems, which outputs a refined piece of work. In this way, due to multiple iterations that improve the wording, the poetry composition is more similar to the real human writing process. 
+2: Chinese Poetry Generation with Planning based Neural Network (pdf in the chat)
+The paper discusses techniques used to generate unique Chinese poetry by first generating the subtopics of the poem and then generating the content for each subtopic.
+3: Generating Homeric Poetry with Deep Neural Networks
+A. Lamar and A. Chambers, "Generating Homeric Poetry with Deep Neural Networks," 2019 First International Conference on ​Transdisciplinary AI (TransAI), 2019, pp. 68-75, doi: 10.1109/TransAI46475.2019.00020.
+4: Evaluating Text Generation with BERT (https://arxiv.org/pdf/1904.09675v3.pdf)
+The paper discusses pitfalls with modern text generation evaluation metrics and introduces BERTScore, a deep learning metric, and shares testing data on image captioning.
 
 
 
