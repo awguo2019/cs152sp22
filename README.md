@@ -26,11 +26,12 @@ The longer-term goal of the project is to see if a computer, or neural net, is c
 3. Train a NN that is capable of generating a free verse poem (related to an optional prompt the user enters in). 
 4. Deploy the NN as a web-app that the user can freely interact with.
 
-##Methods
-###Models
+## Methods
+
+### Models
 Our method involves building a model by fine tuning GPT3 with poem data and seeing how well the model performs compared with a GPT3 model that is not fine tuned. Evaluating the model will also involve trying out different prompts such as “write a poem”, “generate a sonnet” among others. We can also evaluate performance using different models—using davinci (most powerful with most parameters), curie, Babbage, Ada (least powerful and most lightweight).
 
-###Analysis
+### Analysis
 In order to analyze the models, we will create a classification model that should be able to distinguish between AI-written poems and human-written poems. As part of our analysis, we will determine whether the fine-tuned GPT3 model can confuse the classification model to think that an AI-written poem was written by a human. 
 
 
