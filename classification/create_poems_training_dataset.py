@@ -21,7 +21,7 @@ with open("input/train.csv", 'w', encoding='UTF8', newline='') as f:
     for filename in glob.glob('../ai-poems/*.txt'):
         with open(filename, 'r') as readfile:
             textdata = readfile.read()
-            row = ['0', textdata]
+            row = ['1', textdata]
             writer.writerow(row)
 
 with open("input/test.csv", 'w', encoding='UTF8', newline='') as f:
@@ -38,5 +38,5 @@ with open("input/test.csv", 'w', encoding='UTF8', newline='') as f:
     for filename in glob.glob('../free-verse-testing-ai/*.txt'):
         with open(filename, 'r') as readfile:
             textdata = readfile.read()
-            row = ['0', textdata]
+            row = ['1', textdata]
             writer.writerow(row)
