@@ -5,7 +5,7 @@ import shutil
 import random
 
 def poem_gen(adj, noun, name, tp = 1, temp = 1, pp = 2, fp = 2):
-    openai.api_key = "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"
+    openai.api_key = ""
     prompt_text = f"Write a critically-acclaimed {adj} free-verse poem on {noun}. \n \n The {noun} \n \n by {name}"
 
     response = openai.Completion.create(
