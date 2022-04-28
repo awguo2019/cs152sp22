@@ -1,0 +1,7 @@
+ 
+ 
+ is the measure of disorder 
+ in a system. It's also 
+ known as the thermodynamic entropy,а and it refers to randomness or chaos. In other words, it's a way of characterizing how likely something is to happen by chance. For example, if you have a pool with ten white balls and one black ball, then the entropy is low because there aren't that many different possibilities (colors) for the balls to be in. If you have a bag full of marbles which are all different colors, then the entropy is high because there are so many more ways for them to be arranged than if they were just two colors.
+
+ Entropy can be thought of as quantifying disorganization or randomness:The greater the numberof microstates correspondingto agivenmacrostate;the higheris its statistical weightand thus corresponds directlyto entropic content.. Finally,entropycanbeviewedasa measureofinformationorincompletenessbecause knowledge aboutspecific microstates reducesthe overallnumberofthemesavailabletoclassifyasystem
