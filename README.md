@@ -36,33 +36,35 @@ In order to analyze the models, we will create a classification model that shoul
 GPT-3 is unique from all of its predecessors thus far in its ability to accurately "react" to a prompt and predict what's likely to come next, all without fine-tuning towards some desired output. However, this power comes at a cost: small changes in the prompt fed to GPT-3 can drastically change the resulting outputs. Thus, our task for prompt-design was to come up with a prompt that could enable GPT-3 to create the "best" poems, in our case being the most human-like and least robotic. We explore the various prompts and modifications we looked into throughout our prompt-design process, and share sample GPT-3 outputs from these respective prompts (all with temperature = 1, top-p = .87, frequency penalty = 1.5, presence penalty = 1.25).
 
 We start with a basic prompt: "Write a free-verse poem." Here are 3 sample outputs:
+
 1: 
-I am not a poet
-I do not write in free-verse
-This is not a poem
+I am not a poet. 
+I do not write in free-verse. 
+This is not a poem. 
+
 2: 
-I wake up to another day
+I wake up to another day. 
 
-The sun shines in through the window
+The sun shines in through the window. 
 
-And I can't help but feel grateful
+And I can't help but feel grateful. 
 
-For all the good things in my life
+For all the good things in my life. 
 
- even though there are some bad times too
-  I know that overall, things are good
+ even though there are some bad times too. 
+  I know that overall, things are good. 
 
- And I'm thankful for that today
+ And I'm thankful for that today. 
  
- 3:
-The world is a beautiful place,
-The colors are so bright and true,
-And I feel so free and free,
-When I'm away from here.
+3:
+The world is a beautiful place,  
+The colors are so bright and true,  
+And I feel so free and free,  
+When I'm away from here.  
 
-I can breathe in the fresh air,
-And feel the sun on my face,
-And I know that everything is going to be alright.
+I can breathe in the fresh air,  
+And feel the sun on my face,  
+And I know that everything is going to be alright.  
 
 ### Discussion 
 
