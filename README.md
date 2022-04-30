@@ -33,38 +33,20 @@ After thorough research, we decided to find a relevant dataset rather than creat
 In order to analyze the models, we will create a classification model that should be able to distinguish between AI-written poems and human-written poems. We will have a dataset of AI-generated poems, and human-written; We will train the model, so it is able to learn which one is which. As part of our analysis, we will determine whether the fine-tuned GPT3 model can confuse the classification model to think that an AI-written poem was written by a human.
 
 #### Prompt-Design
-GPT-3 is unique from all of its predecessors thus far in its ability to accurately "react" to a prompt and predict what's likely to come next, all without fine-tuning towards some desired output. However, this power comes at a cost: small changes in the prompt fed to GPT-3 can drastically change the resulting outputs. Thus, our task for prompt-design was to come up with a prompt that could enable GPT-3 to create the "best" poems, in our case being the most human-like and least robotic. We explore the various prompts and modifications we looked into throughout our prompt-design process, and share sample GPT-3 outputs from these respective prompts (all with temperature = 1, top-p = .87, frequency penalty = 1.5, presence penalty = 1.25).
+GPT-3 is unique from all of its predecessors thus far in its ability to accurately "react" to a prompt and predict what's likely to come next, all without fine-tuning towards some desired output. However, this power comes at a cost: small changes in the prompt fed to GPT-3 can drastically change the resulting outputs. Thus, our task for prompt-design was to come up with a prompt that could enable GPT-3 to create the "best" poems, in our case being the most human-like and least robotic. We explore the various prompts and modifications we looked into throughout our prompt-design process, and share sample GPT-3 outputs from these respective prompts (all with temperature = 1, top-p = .87, frequency penalty = 1.5, presence penalty = 1.25, no cherry-picking!).
 
-We start with a basic prompt: "Write a free-verse poem." Here are 3 sample outputs:
+We start with a basic prompt: "Write a free-verse poem." [Here are 3 sample outputs.](https://docs.google.com/document/d/1Pi11v6BpMl4L34GgjaGr31vrndXU2re3qbq_RkN3VxA/edit?usp=sharing)
 
-1: 
-I am not a poet. 
-I do not write in free-verse. 
-This is not a poem. 
+Not terrible! But we can do better. Let's try increasing the 'quality' of the poem by specifying that it's critically-acclaimed (which has reported to be relatively successful from [this article](https://arr.am/2020/07/31/gpt-3-using-fiction-to-demonstrate-how-prompts-impact-output-quality/)).
 
-2: 
-I wake up to another day. 
+"Write a critically-acclaimed free-verse poem." [Here's the sample outputs.](https://docs.google.com/document/d/1gpApG-j5MSF9pHz03nZCIpBeHA9F6B7exPrCPHCnShQ/edit?usp=sharing)
 
-The sun shines in through the window. 
+Okay, we definitely went a step in the wrong direction here. Two of the poems sound basically the exact same, and one of them isn't a new poem, but rather an excerpt from a pre-existing critically-acclaimed poem! We realized what GPT-3 needs here is a sense of direction, guiding it towards what it should be writing about. Thus, we included a subject and tone into the prompt, or what the poem is about, and the tone we want the poem to have. Here's our new prompt:
 
-And I can't help but feel grateful. 
+"Write a critically-acclaimed {tone} poem on {subject}." [Here's the outputs, with tone = "wistful" and subject = "rain".](https://docs.google.com/document/d/1AbATDxcDGzbpYe7xzBApugB2tzPJOrXG1LDpZmqF6Gw/edit?usp=sharing)
 
-For all the good things in my life. 
+Now we're getting somewhere! The poems are far more descriptive. But we can still do better. We add one more addition to the prompt: a title, and an author. This includes many different properties: we find that the author we provide drastically changes the style of the output! Thus, we explore 3 more outputs, with the same subject and tone, but with three authors: Robert Hayden (made-up name), Lord Byron (famous romantic poet), and Maya Angelou (female BIPOC contemporary poet). [Here's the results.] (https://docs.google.com/document/d/1jr4V7qPSyV4YG6IstK4QqlDOOr4U4gBbBrR8uKqVWNc/edit?usp=sharing)
 
- even though there are some bad times too. 
-  I know that overall, things are good. 
-
- And I'm thankful for that today. 
- 
-3:
-The world is a beautiful place,  
-The colors are so bright and true,  
-And I feel so free and free,  
-When I'm away from here.  
-
-I can breathe in the fresh air,  
-And feel the sun on my face,  
-And I know that everything is going to be alright.  
 
 ### Discussion 
 
