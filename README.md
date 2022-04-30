@@ -32,6 +32,38 @@ After thorough research, we decided to find a relevant dataset rather than creat
 ### Analysis
 In order to analyze the models, we will create a classification model that should be able to distinguish between AI-written poems and human-written poems. We will have a dataset of AI-generated poems, and human-written; We will train the model, so it is able to learn which one is which. As part of our analysis, we will determine whether the fine-tuned GPT3 model can confuse the classification model to think that an AI-written poem was written by a human.
 
+#### Prompt-Design
+GPT-3 is unique from all of its predecessors thus far in its ability to accurately "react" to a prompt and predict what's likely to come next, all without fine-tuning towards some desired output. However, this power comes at a cost: small changes in the prompt fed to GPT-3 can drastically change the resulting outputs. Thus, our task for prompt-design was to come up with a prompt that could enable GPT-3 to create the "best" poems, in our case being the most human-like and least robotic. We explore the various prompts and modifications we looked into throughout our prompt-design process, and share sample GPT-3 outputs from these respective prompts (all with temperature = 1, top-p = .87, frequency penalty = 1.5, presence penalty = 1.25).
+
+We start with a basic prompt: "Write a free-verse poem." Here are 3 sample outputs:
+1: 
+I am not a poet
+I do not write in free-verse
+This is not a poem
+2: 
+I wake up to another day
+
+The sun shines in through the window
+
+And I can't help but feel grateful
+
+For all the good things in my life
+
+ even though there are some bad times too
+  I know that overall, things are good
+
+ And I'm thankful for that today
+ 
+ 3:
+The world is a beautiful place,
+The colors are so bright and true,
+And I feel so free and free,
+When I'm away from here.
+
+I can breathe in the fresh air,
+And feel the sun on my face,
+And I know that everything is going to be alright.
+
 ### Discussion 
 
 We found that our prompt-design poem generation script, which utilized GPT-3's DaVinci engine was able to produce [GOOD/DECENT] results. We also fine-tuned the engine by training it on real world examples of handwritten free verse poetry. We found that the model performed better than the baseline GPT-3 model by a margin of _____. Initially, we had hypothesized that we would be able to create a model that would be able to write poetry as "good" as an actual human would be able to. What we found was that _______. We validated this by running a classification model, which showed that ____% of the time, the model was able to accurately predict what was a human written poem versus what was an artificially generated poem. Initially, we had hoped and hypothesized that we would be able to generate poems that would be nearly indistinguishable from computer-generated poems. Given that the model was able to detect the difference between the two types of poems ___% of the time, our hypothesis was ultimately proven [TRUE/FALSE].
