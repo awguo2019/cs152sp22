@@ -86,7 +86,7 @@ Chambers, America. “Generating Homeric Poetry with Deep Neural Networks.” Ge
 
 Wang, Zhe, et al. “Chinese Poetry Generation with Planning Based Neural Network.” ArXiv.org, 7 Dec. 2016, arxiv.org/abs/1610.09889. 
 
-Yan, Rui. “I, Poet: Automatic Poetry Composition through Recurrent Neural Networks ...” Http://Cslt.riit.tsinghua.edu.cn/Mediawiki/Images/c/c7/Automatic_poetry_composition_through_recurrent_neural_networks_with_iterative_polishing_schema.Pdf, cslt.riit.tsinghua.edu.cn/mediawiki/images/c/c7/Automatic_poetry_composition_through_recurrent_neural_networks_with_iterative_polishing_schema.pdf. 
+Yan, Rui. “I, Poet: Automatic Poetry Composition through Recurrent Neural Networks ...” July, 2016.
 
 Zhang, Tianyi, et al. “BERTScore: Evaluating Text Generation with Bert.” ArXiv.org, 24 Feb. 2020, arxiv.org/abs/1904.09675. 
 
