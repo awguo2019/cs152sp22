@@ -48,6 +48,18 @@ We found that our prompt-design poem generation script, which utilized a fine-tu
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | 0             | 0.238607      | 0.463249      | 0.941176      | 0.944444      | 00:03         |
 
+
+| epoch         | train_loss    | valid_loss    | accuracy      | fbeta_score   | time          |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| 0             | 0.188131      | 0.438647      | 0.823529      | 0.842105      | 00:03         |
+| 1             | 0.153211      | 0.399580      | 0.852941      | 0.871795      | 00:04         |
+
+
+
+| epoch         | train_loss    | valid_loss    | accuracy      | fbeta_score   | time          |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| 0             | 0.275677      | 0.363191      | 0.941176      | 0.928571      | 00:03         |
+
 While this seems to imply that the models were able to pinpoint with relative accuracy what is and is not artificially-generated poetry, there are some other considerations we must make as well. Firstly, the models could very well be overfitting to certain types of poetry and classifying by genre, word-choice, or other extraneous factors. We see that this is a likely possibility by looking at the test results from each of our models. We tested our models by generating 100 examples of artificially-produced poetry both with our fine-tuned model and with the baseline model with the following hyperparameters set: temp=1, top_p={.75, 1}, freq_pen={.8, 1.2, 2}, pres_pen={.8, 1.2, 2}. We found these hyperparameters to work the best based on a grid search. Our first model misidentified 12/30 examples of the baseline generated data, while it misidentified 36/38 examples of the fine-tuned data. Our second model misidentified 7/30 examples of the baseline data and 36/38 of the fine-tuned examples. Our final model misidentified 7/30 of the baseline examples and 34/38 of the fine-tuned examples. 
 
 Furthermore, this suggests that by fine-tuning the model, we are able to achieve results that more closely mimic poetry that would be written by a real person. This is all to say, while we may not have achieved a perfect model, the data suggests that there is definitely room for improvement on this front, that a more fine-tuned model may be able to get closer to producing poetry that is indistinguishable from that which a human would write. 
