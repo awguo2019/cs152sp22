@@ -23,7 +23,7 @@ In order to analyze the models, we will create a classification model that shoul
 ### Prompt-Design
 GPT-3 is unique from all of its predecessors thus far in its ability to accurately "react" to a prompt and predict what's likely to come next, all without fine-tuning towards some desired output. However, this power comes at a cost: small changes in the prompt fed to GPT-3 can drastically change the resulting outputs. Thus, our task for prompt-design was to come up with a prompt that could enable GPT-3 to create the "best" poems, in our case being the most human-like and least robotic. We explore the various prompts and modifications we looked into throughout our prompt-design process, and share sample GPT-3 outputs from these respective prompts (all with temperature = 1, top-p = .87, frequency penalty = 1.5, presence penalty = 1.25, no cherry-picking!).
 
-We start with a basic prompt: "Write a free-verse poem." ![Here are 3 sample outputs.](https://user-images.githubusercontent.com/78115104/166856154-233657f8-7430-46e9-b57e-a9d827b1837d.png)
+We start with a basic prompt: "Write a free-verse poem." [Here are 3 sample outputs](https://docs.google.com/document/d/1Pi11v6BpMl4L34GgjaGr31vrndXU2re3qbq_RkN3VxA/edit)
 
 
 Not terrible! But we can do better. Let's try increasing the 'quality' of the poem by specifying that it's critically-acclaimed (which has reported to be relatively successful from [this article](https://arr.am/2020/07/31/gpt-3-using-fiction-to-demonstrate-how-prompts-impact-output-quality/)).
