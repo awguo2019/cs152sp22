@@ -1,9 +1,5 @@
 # Logophile: A Free Verse Poetry Generator
 
-| epoch         | train_loss    | valid_loss
-| ------------- | ------------- | -------------
-| 0             | Content Cell  |
-
 ## Abstract
 Recently, AI-generated art has been a trendy topic in the technology field and has spurred much public attention and debate. In this project, we attempted to create a neural network that is capable of generating poetry, which could serve as an inspiration for aspiring writers. First of all, we built a neural network that, given an optional input, was able to produce free-verse poetry related to the aforementioned input. Secondly, we were able to create a corpus of free-verse poetry to fine-tune GPT-3 with. In order to analyze the quality of our model, we built a classifier to distinguish between human and AI written poetry. Finally, we deployed our model into a full-stack web application, making it accessible for other users to try what we have made. The results revealed that after fine-tuning the model, GPT-3 produced impressive poetry, which could help many individuals who are pursuing creative careers. Looking forward, we want to expand our model to be able to generate different types of poetry as well as utilize languages other than English.
 
@@ -47,9 +43,10 @@ Needless to say, these poems are very impressive. By making the subject more spe
 ## Discussion 
 
 We found that our prompt-design poem generation script, which utilized a fine-tuned version of GPT-3's DaVinci engine trained on real-world examples of human-written poetry, was able to produce decent results, though not the results we were ideally looking for. Initially, we had hypothesized that we would be able to create a model that would be able to write poetry as "good" as an actual human would be able to. What this entails is that our best binary classifier (which classifies between "real" and "artificial" poetry) would have an accuracy of around 50%, thus indicating that human and AI-generated poetry are virtually indistinguishable, at least to a well-trained model. We trained multiple binary classifier models and ultimately selected the three best-performing models to use as our basis for determining whether there is a distinguishable difference between the two sorts of poetry. We trained our top three performers on a combination of human and AI data and found that our top three models performed with accuracies of 0.94, 0.82, and 0.94 for the baseline data and the fine-tuned data, respectively. 
-![Image](src)<img width="508" alt="Screen Shot 2022-05-04 at 5 50 26 PM" src="https://user-images.githubusercontent.com/78115104/166849364-fc417ea8-3735-4178-9a00-9dc1f3aaaef6.png">
-![Image](src)<img width="532" alt="Screen Shot 2022-05-04 at 5 50 50 PM" src="https://user-images.githubusercontent.com/78115104/166849384-80a62280-5b5b-4e6d-9f2d-9e407982940b.png">
-![Image](src)<img width="551" alt="Screen Shot 2022-05-04 at 5 51 10 PM" src="https://user-images.githubusercontent.com/78115104/166849404-ebabb783-cd4d-438f-b1e5-1c2a872413b6.png">
+
+| epoch         | train_loss    | valid_loss    | accuracy      | fbeta_score   | time          |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| 0             | 0.238607      | 0.463249      | 0.941176      | 0.944444      | 00:03         |
 
 While this seems to imply that the models were able to pinpoint with relative accuracy what is and is not artificially-generated poetry, there are some other considerations we must make as well. Firstly, the models could very well be overfitting to certain types of poetry and classifying by genre, word-choice, or other extraneous factors. We see that this is a likely possibility by looking at the test results from each of our models. We tested our models by generating 100 examples of artificially-produced poetry both with our fine-tuned model and with the baseline model with the following hyperparameters set: temp=1, top_p={.75, 1}, freq_pen={.8, 1.2, 2}, pres_pen={.8, 1.2, 2}. We found these hyperparameters to work the best based on a grid search. Our first model misidentified 12/30 examples of the baseline generated data, while it misidentified 36/38 examples of the fine-tuned data. Our second model misidentified 7/30 examples of the baseline data and 36/38 of the fine-tuned examples. Our final model misidentified 7/30 of the baseline examples and 34/38 of the fine-tuned examples. 
 
