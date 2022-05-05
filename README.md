@@ -51,9 +51,7 @@ While this seems to imply that the models were able to pinpoint with relative ac
 
 Furthermore, this suggests that by fine-tuning the model, we are able to achieve results that more closely mimic poetry that would be written by a real person. This is all to say, while we may not have achieved a perfect model, the data suggests that there is definitely room for improvement on this front, that a more fine-tuned model may be able to get closer to producing poetry that is indistinguishable from that which a human would write. 
 
-![]()(Misidentified Poems.png)
-
-
+![Misidentified Poems](https://user-images.githubusercontent.com/78115104/166850553-5d4b0628-d30c-4f7e-a1c3-194645c6e294.png)
 
 
 ## Ethics
@@ -67,7 +65,7 @@ If we had more time on this project, we see a couple of directions we could cont
 ## References
 
 
-![Miseidentified Poems 1](https://user-images.githubusercontent.com/78115104/166850434-0214e4ff-18d1-428b-a709-38daae0828fa.png)
+
 
 
 
