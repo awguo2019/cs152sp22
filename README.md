@@ -46,17 +46,20 @@ We found that our prompt-design poem generation script, which utilized a fine-tu
 
 
 Classification Model Try 5 (after fine-tuning with fit.one_cycle 2 times)
+
 | epoch         | train_loss    | valid_loss    | accuracy      | fbeta_score   | time          |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | 0             | 0.275677      | 0.363191      | 0.941176      | 0.928571      | 00:03         |
 
 Classification Model Try 2 (after fine-tuning with fit.one_cycle 3 times)
+
 | epoch         | train_loss    | valid_loss    | accuracy      | fbeta_score   | time          |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | 0             | 0.238607      | 0.463249      | 0.941176      | 0.944444      | 00:03         |
 
 
 Classification Model Try 4 (after fine-tuning with fit.one_cycle 4 times)
+
 | epoch         | train_loss    | valid_loss    | accuracy      | fbeta_score   | time          |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | 0             | 0.188131      | 0.438647      | 0.823529      | 0.842105      | 00:03         |
@@ -79,7 +82,13 @@ One of the main things that we could have done better on this project is getting
 If we had more time on this project, we see a couple of directions we could continue our work. Firstly, it would be interesting to create a feature that allows people to share AI-generated poetry on social media. In modern society, social media holds a lot of power and sharing poetry on the platforms like Facebook or Twitter is common among people of our age. This feature would make poetry simple and accessible for many individuals, who could use it as a source of inspiration. However, it is important to consider how it would affect other people despite the benefits. The potential disadvantage of this feature could be a discouragement from writing original poetry. In some ways, it seems significantly easier to train a neural network model that can write unique and brilliant poetry than to write it yourself. Creators could overuse it and pretend like it is their work. Coming up with a solid plagiarism prevention strategy is one of the ways we hope to further our work. On the other hand, while it is difficult to prevent humans from plagiarizing content, it is essential to ensure that our AI model generates plagiarism-free content and does not include hurtful speech (sexism, racism, etc.). In order to build AI that makes unbiased poetry, we would have to clean our training dataset from conscious and unconscious assumptions about gender, race, and other ideological concepts. Lastly, we want our work to be accessible to all internet users, and at the current moment, our model can only produce free-verse poetry in English. Ideally, we want our model to be able to generate different types of poetry in different languages, which could significantly benefit a vast number of writers across the globe.   
 
 ## References
+Chambers, America. “Generating Homeric Poetry with Deep Neural Networks.” Generating Homeric Poetry with Deep Neural Networks | Department of Classics, 1 May 2020, classics.stanford.edu/publications/generating-homeric-poetry-deep-neural-networks. 
 
+Wang, Zhe, et al. “Chinese Poetry Generation with Planning Based Neural Network.” ArXiv.org, 7 Dec. 2016, arxiv.org/abs/1610.09889. 
+
+Yan, Rui. “I, Poet: Automatic Poetry Composition through Recurrent Neural Networks ...” Http://Cslt.riit.tsinghua.edu.cn/Mediawiki/Images/c/c7/Automatic_poetry_composition_through_recurrent_neural_networks_with_iterative_polishing_schema.Pdf, cslt.riit.tsinghua.edu.cn/mediawiki/images/c/c7/Automatic_poetry_composition_through_recurrent_neural_networks_with_iterative_polishing_schema.pdf. 
+
+Zhang, Tianyi, et al. “BERTScore: Evaluating Text Generation with Bert.” ArXiv.org, 24 Feb. 2020, arxiv.org/abs/1904.09675. 
 
 
 
