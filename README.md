@@ -1,9 +1,8 @@
 # Logophile: A Free Verse Poetry Generator
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| epoch         | train_loss    | valid_loss
+| ------------- | ------------- | -------------
+| 0             | Content Cell  |
 
 ## Abstract
 Recently, AI-generated art has been a trendy topic in the technology field and has spurred much public attention and debate. In this project, we attempted to create a neural network that is capable of generating poetry, which could serve as an inspiration for aspiring writers. First of all, we built a neural network that, given an optional input, was able to produce free-verse poetry related to the aforementioned input. Secondly, we were able to create a corpus of free-verse poetry to fine-tune GPT-3 with. In order to analyze the quality of our model, we built a classifier to distinguish between human and AI written poetry. Finally, we deployed our model into a full-stack web application, making it accessible for other users to try what we have made. The results revealed that after fine-tuning the model, GPT-3 produced impressive poetry, which could help many individuals who are pursuing creative careers. Looking forward, we want to expand our model to be able to generate different types of poetry as well as utilize languages other than English.
