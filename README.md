@@ -44,21 +44,24 @@ Needless to say, these poems are very impressive. By making the subject more spe
 
 We found that our prompt-design poem generation script, which utilized a fine-tuned version of GPT-3's DaVinci engine trained on real-world examples of human-written poetry, was able to produce decent results, though not the results we were ideally looking for. Initially, we had hypothesized that we would be able to create a model that would be able to write poetry as "good" as an actual human would be able to. What this entails is that our best binary classifier (which classifies between "real" and "artificial" poetry) would have an accuracy of around 50%, thus indicating that human and AI-generated poetry are virtually indistinguishable, at least to a well-trained model. We trained multiple binary classifier models and ultimately selected the three best-performing models to use as our basis for determining whether there is a distinguishable difference between the two sorts of poetry. We trained our top three performers on a combination of human and AI data and found that our top three models performed with accuracies of 0.94, 0.82, and 0.94 for the baseline data and the fine-tuned data, respectively. 
 
+
+Classification Model Try 5 (after fine-tuning with fit.one_cycle 2 times)
+| epoch         | train_loss    | valid_loss    | accuracy      | fbeta_score   | time          |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| 0             | 0.275677      | 0.363191      | 0.941176      | 0.928571      | 00:03         |
+
+Classification Model Try 2 (after fine-tuning with fit.one_cycle 3 times)
 | epoch         | train_loss    | valid_loss    | accuracy      | fbeta_score   | time          |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | 0             | 0.238607      | 0.463249      | 0.941176      | 0.944444      | 00:03         |
 
 
+Classification Model Try 4 (after fine-tuning with fit.one_cycle 4 times)
 | epoch         | train_loss    | valid_loss    | accuracy      | fbeta_score   | time          |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | 0             | 0.188131      | 0.438647      | 0.823529      | 0.842105      | 00:03         |
 | 1             | 0.153211      | 0.399580      | 0.852941      | 0.871795      | 00:04         |
 
-
-
-| epoch         | train_loss    | valid_loss    | accuracy      | fbeta_score   | time          |
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| 0             | 0.275677      | 0.363191      | 0.941176      | 0.928571      | 00:03         |
 
 While this seems to imply that the models were able to pinpoint with relative accuracy what is and is not artificially-generated poetry, there are some other considerations we must make as well. Firstly, the models could very well be overfitting to certain types of poetry and classifying by genre, word-choice, or other extraneous factors. We see that this is a likely possibility by looking at the test results from each of our models. We tested our models by generating 100 examples of artificially-produced poetry both with our fine-tuned model and with the baseline model with the following hyperparameters set: temp=1, top_p={.75, 1}, freq_pen={.8, 1.2, 2}, pres_pen={.8, 1.2, 2}. We found these hyperparameters to work the best based on a grid search. Our first model misidentified 12/30 examples of the baseline generated data, while it misidentified 36/38 examples of the fine-tuned data. Our second model misidentified 7/30 examples of the baseline data and 36/38 of the fine-tuned examples. Our final model misidentified 7/30 of the baseline examples and 34/38 of the fine-tuned examples. 
 
