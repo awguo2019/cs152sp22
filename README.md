@@ -67,6 +67,7 @@ If we had more time on this project, we see a couple of directions we could cont
 ## References
 
 
+![Miseidentified Poems 1](https://user-images.githubusercontent.com/78115104/166850434-0214e4ff-18d1-428b-a709-38daae0828fa.png)
 
 
 
@@ -90,7 +91,8 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/]
+basic-writing-and-formatting-syntax).
 
 ### Jekyll Themes
 
