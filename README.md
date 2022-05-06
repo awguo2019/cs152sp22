@@ -61,7 +61,7 @@ And longing for what can never be again.
 
 Now we're getting somewhere! The poems are far more descriptive. But we could still improve. We added one more addition to the prompt: a title, and an author. This includes many different properties: we found that the author we provide drastically changes the style of the output! Thus, we explore 3 more outputs, with the same subject and tone, but with three authors: Robert Hayden (made-up name), Lord Byron (famous romantic poet), and Maya Angelou (female BIPOC contemporary poet). [Here's the results.](https://docs.google.com/document/d/1jr4V7qPSyV4YG6IstK4QqlDOOr4U4gBbBrR8uKqVWNc/edit?usp=sharing)
 
-Rain. 
+Rain.  
 By Maya Angelou. 
   
 rain. 
@@ -83,7 +83,7 @@ It's clear to see that this addition of author and title is a massive step up. T
 
 Now, lets change up our perspective of the subject. Previously, our subject is very simple: "rain". But we can make it more specific, more interesting. This subject is the title of our poem! So let's add some flavor into it. Our new prompt: "daydreaming out into the rainy window", with the same "wistful" tone. [Here are the poems!](https://docs.google.com/document/d/1tkzKsjO0iDMrHkXCsDCE7D3gaD9AI-qnp5vf0gpSVN0/edit?usp=sharing)
 
-daydreaming out into the rainy window. 
+daydreaming out into the rainy window.   
 by Lord Byron. 
 
  I.  
