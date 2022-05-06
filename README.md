@@ -49,14 +49,14 @@ Okay, we definitely went a step in the wrong direction here. Two of the poems so
 
 "Write a critically-acclaimed {tone} poem on {subject}." [Here's the outputs, with tone = "wistful" and subject = "rain".](https://docs.google.com/document/d/1AbATDxcDGzbpYe7xzBApugB2tzPJOrXG1LDpZmqF6Gw/edit?usp=sharing)
 
-The rain is a wistful thing 
-It falls from the sky and weeps 
-For all the sorrows of the world 
-And all the joys that have been lost 
-It pelts the ground and washes away 
-The memories of happier days 
-And leaves behind only sadness 
-And longing for what can never be again.  
+The rain is a wistful thing    
+It falls from the sky and weeps    
+For all the sorrows of the world    
+And all the joys that have been lost    
+It pelts the ground and washes away    
+The memories of happier days   
+And leaves behind only sadness    
+And longing for what can never be again.     
 
 
 Now we're getting somewhere! The poems are far more descriptive. But we could still improve. We added one more addition to the prompt: a title, and an author. This includes many different properties: we found that the author we provide drastically changes the style of the output! Thus, we explore 3 more outputs, with the same subject and tone, but with three authors: Robert Hayden (made-up name), Lord Byron (famous romantic poet), and Maya Angelou (female BIPOC contemporary poet). [Here's the results.](https://docs.google.com/document/d/1jr4V7qPSyV4YG6IstK4QqlDOOr4U4gBbBrR8uKqVWNc/edit?usp=sharing)
