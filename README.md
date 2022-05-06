@@ -49,13 +49,13 @@ Okay, we definitely went a step in the wrong direction here. Two of the poems so
 
 "Write a critically-acclaimed {tone} poem on {subject}." [Here's the outputs, with tone = "wistful" and subject = "rain".](https://docs.google.com/document/d/1AbATDxcDGzbpYe7xzBApugB2tzPJOrXG1LDpZmqF6Gw/edit?usp=sharing)
 
-The rain is a wistful thing. 
-It falls from the sky and weeps. 
-For all the sorrows of the world. 
-And all the joys that have been lost. 
-It pelts the ground and washes away. 
-The memories of happier days. 
-And leaves behind only sadness. 
+The rain is a wistful thing 
+It falls from the sky and weeps 
+For all the sorrows of the world 
+And all the joys that have been lost 
+It pelts the ground and washes away 
+The memories of happier days 
+And leaves behind only sadness 
 And longing for what can never be again.  
 
 
@@ -64,7 +64,7 @@ Now we're getting somewhere! The poems are far more descriptive. But we could st
 Rain  
 By Maya Angelou 
   
-rain. 
+rain    
 falling on the ground 
 making a sound 
 so soft and gentle 
